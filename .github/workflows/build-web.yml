@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'pengaduan_sarana_sekolah (37)'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -27,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: flutter-web-build
-          path: build/web
+          path: 'pengaduan_sarana_sekolah (37)/build/web'
